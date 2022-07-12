@@ -2,6 +2,10 @@
 namespace application\controllers;
 
 class TodoController extends Controller {
+    public function main(){
+        return "index.html";
+    }
+    
     public function index() {
         switch(getMethod()) {
             case _GET:
